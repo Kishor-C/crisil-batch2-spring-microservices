@@ -26,14 +26,14 @@ public class FirstRestApi {
 	
 	
 	// the front-end / client sends json data like {"name":value, "dob":yyyy-MM-dd}
-	@PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+	@PostMapping(consumes = {MediaType.APPLICATION_JSON_VALUE})
 	public ResponseEntity<Object> storeApi(@RequestBody User user) {
 		ResponseEntity<Object> response = null;
 		User savedEntity = service.store(user);
 		response = ResponseEntity.status(HttpStatus.CREATED).body(savedEntity);
 		return response;
 	}
-	@GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+	@GetMapping(produces = {MediaType.APPLICATION_JSON_VALUE})
 	public ResponseEntity<Object> getUsersApi() {
 		ResponseEntity<Object> response = null;
 		List<User> list = service.fetchUsers();

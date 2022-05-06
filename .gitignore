@@ -3,10 +3,9 @@ node_modules
 *.metdata
 *.class
 /*.class
-target/
 bin/
 */bin
-*/target
+
 output
 .DS_Store
 .classpath
@@ -15,7 +14,7 @@ output
 .metadata
 .vscode
 *.war
-*.jar
+
 *.js.map
 PhantomJS_*
 Servers
