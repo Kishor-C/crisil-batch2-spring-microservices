@@ -1,0 +1,4 @@
+# this name is used to give logical name at the time registering in SD
+spring:
+  application:
+    name: APP2
