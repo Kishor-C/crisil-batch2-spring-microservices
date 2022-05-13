@@ -1,0 +1,4 @@
+# application name is not only for microservice name it is also for configuration file name
+# spring cloud config uri gives location of the configuration server
+spring:  application:    name: hello
+  cloud:    config:      uri: http://localhost:8888/     
